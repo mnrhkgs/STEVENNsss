@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ستيفن🔥</title>
+  <link rel="" href="">
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+  
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      overflow: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 9999;
+    }
+
+    #loader h1 {
+      font-size: 3rem;
+      color: #ff0000;
+      text-shadow: 0 0 20px #ff3300, 0 0 40px #ff6600;
+      animation: flicker 1.5s infinite alternate;
+    }
+
+    @keyframes flicker {
+      from { opacity: 1; text-shadow: 0 0 10px #ff0000; }
+      to { opacity: 0.6; text-shadow: 0 0 30px #ff6600; }
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ff0000;
+      margin-bottom: 20px;
+      box-shadow: 0 0 40px #ff0000, 0 0 80px #ff3300;
+      animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { box-shadow: 0 0 20px #ff0000; }
+      to { box-shadow: 0 0 60px #ff3300; }
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 10px 0;
+      text-shadow: 0 0 20px #ff0000, 0 0 40px #ff3300;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #ddd;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+      max-width: 350px;
+    }
+
+    .link {
+      display: block;
+      padding: 15px;
+      border-radius: 40px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(255,0,0,0.9), inset 0 0 10px rgba(255,0,0,0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .link::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+      transition: 0.5s;
+    }
+
+    .link:hover::before {
+      left: 100%;
+    }
+
+    .link:hover {
+      background: #ff0000;
+      transform: scale(1.15) rotate(-2deg);
+      box-shadow: 0 0 30px #ff3300, inset 0 0 20px #000;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .cursor {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(255,0,0,0.7);
+      pointer-events: none;
+      box-shadow: 0 0 15px #ff0000, 0 0 40px #ff3300;
+      animation: fade 0.5s forwards;
+    }
+
+    @keyframes fade {
+      to { opacity: 0; transform: scale(2); }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div id="loader">
+    <h1>stevn💲</h1>
+  </div>
+
+  <img src="5956063344341404003.jpg" alt="مصطفى" class="profile-pic">
+  <h1>STEVEN💲</h1>
+  <p>كل حساباتي بمكان واحد – اضغط 🔥</p>
+
+  <div class="links">
+    <a href="https://instagram.com/4n_.59" class="link">📷 Instagram</a>
+    <a href="https://tiktok.com/@afo987_" class="link">🎵 TikTok</a>
+    <a href="https://youtube.com/@ygc4" class="link">▶️ YouTube</a>
+    <a href="https://t.me/zxxeh" class="link">✈️ Telegram</a>
+</div>
+  <footer>
+    © 2025 MNR<br>
+    <span style="font-family: 'Orbitron', sans-serif; color: #ff0000; font-weight: bold;">MNR</span>
+  </footer>
+
+  <!-- زر صغير لتغيير الألوان -->
+  <button id="colorSwitch" style="
+    position: fixed; top: 10px; left: 10px;
+    width: 30px; height: 30px;
+    border-radius: 50%; border: none;
+    background: #ff0000; cursor: pointer;
+    z-index: 9999;
+  "></button>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 100 },
+        "color": { "value": "#ff0000" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.7 },
+        "size": { "value": 3 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ff3300",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 3 }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+      }, 2500);
+    });
+
+    document.addEventListener("mousemove", e => {
+      let cursor = document.createElement("div");
+      cursor.className = "cursor";
+      cursor.style.left = e.pageX + "px";
+      cursor.style.top = e.pageY + "px";
+      document.body.appendChild(cursor);
+      setTimeout(() => cursor.remove(), 500);
+    });
+
+    // زر تغيير الألوان
+    const colors = [
+      {bg:'#000', text:'#fff', main:'#ff0000', shadow:'#ff3300', linkBg:'rgba(0,0,0,0.7)'},
+      {bg:'#0a0a30', text:'#e0f7ff', main:'#3b82f6', shadow:'#06b6d4', linkBg:'rgba(0,0,50,0.7)'},
+      {bg:'#1a001a', text:'#f7e0ff', main:'#a855f7', shadow:'#d946ef', linkBg:'rgba(50,0,50,0.7)'}
+    ];
+    let current = 0;
+
+    document.getElementById('colorSwitch').addEventListener('click', () => {
+      current = (current + 1) % colors.length;
+      const c = colors[current];
+
+      // الخلفية
+      document.body.style.background = c.bg;
+
+      // النصوص
+      document.querySelectorAll('p, footer').forEach(el => el.style.color = c.text);
+
+      // العناوين
+      document.querySelectorAll('h1').forEach(el => {
+        el.style.textShadow = `0 0 20px ${c.main}, 0 0 40px ${c.shadow}`;
+      });
+
+      // الصورة الشخصية
+      const avatar = document.querySelector('.profile-pic');
+      if(avatar) avatar.style.boxShadow = `0 0 40px ${c.main}, 0 0 80px ${c.shadow}`;
+
+      // روابط الحسابات
+      document.querySelectorAll('.link').forEach(a => {
+        a.style.background = c.linkBg;
+        a.style.color = c.text;
+        a.addEventListener('mouseover', () => {
+          a.style.background = c.main;
+          a.style.boxShadow = `0 0 30px ${c.shadow}, inset 0 0 20px #000`;
+        });
+        a.addEventListener('mouseout', () => {
+          a.style.background = c.linkBg;
+          a.style.boxShadow = `0 0 20px rgba(255,0,0,0.9),inset 0 0 10px rgba(255,0,0,0.5)`;
+        });
+      });
+
+      // Particles
+      if(window.pJSDom && window.pJSDom.length) {
+        window.pJSDom[0].pJS.particles.color.value = c.main;
+        window.pJSDom[0].pJS.particles.line_linked.color = c.shadow;
+      }
+
+      // تغيير لون زر نفسه
+      document.getElementById('colorSwitch').style.background = c.main;
+    });
+  </script>
+</body>
+</html>
